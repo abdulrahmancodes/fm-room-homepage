@@ -36,7 +36,7 @@ window.addEventListener("mousedown", (e) => {
 })
 
 function populateSlidableContainer() {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 1000) {
         slidableImg.setAttribute("src", `images/desktop-image-hero-${changableContent[index].id}.jpg`);
     } else {
         slidableImg.setAttribute("src", `images/mobile-image-hero-${changableContent[index].id}.jpg`);
