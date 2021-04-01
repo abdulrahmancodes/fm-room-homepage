@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <title>Frontend Mentor | Room homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbar__hamburger" id="hamburger">
+        <img src="images/icon-hamburger.svg" alt="">
+      </div>
+      <div class="navbar__logo">
+        <img src="images/logo.svg" alt="" >
+      </div>
+      <ul class="navbar__list">
+        <!-- <li><img src="images/icon-close.svg" alt="" id="close"></li> -->
+        <li class="navbar__item"><a>home</a></li>
+        <li class="navbar__item"><a>shop</a></li>
+        <li class="navbar__item"><a>about</a></li>
+        <li class="navbar__item"><a>contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="slidable-content">
+        <img src="images/desktop-image-hero-1.jpg" alt="" class="slidable-content__img" id="slidableImg">
+        <div class="slidable-content__desc" id="slidableDesc">
+          <h2 class="slidable-content__heading" id="slidableHeading">Discover innovative ways to decorate</h2>
+          <p class="slidable-content__para" id="slidablePara">We provide unmatched quality, comfort, and style for property owners across the country. 
+            Our experts combine form and function in bringing your vision to life. Create a room in your 
+            own style with our collection and make your property a reflection of you and what you love.
+          </p>
+          <button class="slidable-content__btn">SHOP NOW</button>
+          <div class="slidable-content__slider">
+            <div id="left">
+              <img src="images/icon-angle-left.svg" alt="">
+            </div>
+            <div id="right">
+              <img src="images/icon-angle-right.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <img src="images/image-about-dark.jpg" alt="" class="about__img">
+        <div class="about__desc">
+          <h6 class="about__heading">About our furniture</h6>
+          <p class="about__para">Our multifunctional collection blends design and function to suit your individual taste.
+            Make each room unique, or pick a cohesive theme that best express your interests and what
+            inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+            or anything in between. Product specialists are available to help you create your dream space.</p>
+        </div>
+        <img src="images/image-about-light.jpg" alt="" class="about__img">
+      </div>
+    </main>
+  </div> 
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

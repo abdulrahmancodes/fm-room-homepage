@@ -1,0 +1,52 @@
+
+.navbar {
+    z-index: 3;
+    width: 30%;
+    position: absolute;
+    padding: 70px 0 0 60px;
+    display: flex;
+    justify-content: space-between;
+
+    &__hamburger {
+        display: none;
+    }
+
+    &__logo {
+        cursor: pointer;
+        flex: 2;
+        margin-right: 20px;
+    }
+
+    &__list {
+        flex: 5;
+        display: flex;
+        justify-content: space-between;
+        color: $White;
+        font-weight: 600;
+    }
+
+    #close {
+        display: none;
+    }
+
+    &__item {
+        position: relative;
+        cursor: pointer;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            left: 25%;
+            top: 20px;
+            background: $White;
+            clip-path: inset(0 50% 0 50%);
+            transition: clip-path .2s linear;
+        }
+
+        &:hover::after {
+            clip-path: inset(0 0 0 0);
+        }
+    }
+}
